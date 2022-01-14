@@ -1,29 +1,13 @@
-#! python3
-
-"""
-Create a function that asks the player for their choice
-The function should return:
-  rock     : 0
-  paper    : 1
-  scissors : 2
-
-```
-Sample Run:
-Enter your choice:
-rock
-
-Output: 0
-"""
 
 def playerChoice():
-  '''
-  No input parameters needed.
-  Function should ask the players to make their choice.  How you ask is unimportant, but the
-  output must be consistent:
-  0: rock
-  1: paper
-  2: scissors
-  '''
+  x = input("rock paper or scissors: ")
+  if x == "rock":
+    value = 0
+  if x == "paper":
+    value = 1
+  if x == "scissors":
+    value = 2
+  
   return value
 
 

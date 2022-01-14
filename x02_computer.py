@@ -8,12 +8,15 @@ output:
 1 : paper
 2 : scissors
 """
-
+import random
 def computerChoice():
-  
-  
-  
-  
+  x = random.randint(0,2)
+  if x == 0:
+    value = "rock"
+  if x == 1:
+    value = "paper"
+  if x == 2:
+    value = "scissors" 
   return value
 
 
