@@ -18,23 +18,23 @@ Output:
 '''
 
 def playerWins(computer,player):
-  if player == 1 and computer == 1:
+  if player == 1 and computer == 'paper':
     return 0
-  if player == 2 and computer == 2:
+  if player == 2 and computer == 'scissors':
     return 0 
-  if player == 0 and computer == 0:
+  if player == 0 and computer == 'rock':
     return 0 
-  if player == 1 and computer == 2:
+  if player == 1 and computer == 'scissors':
     return -1
-  if player == 0 and computer == 1:
+  if player == 0 and computer == 'paper':
     return -1
-  if player == 2 and computer == 0:
+  if player == 2 and computer == 'rock':
     return -1
-  if player == 0 and computer == 2:
+  if player == 0 and computer == 'scissors':
     return 1
-  if player == 1 and computer == 0:
+  if player == 1 and computer == 'rock':
     return 1
-  if player == 2 and computer == 1:
+  if player == 2 and computer == 'paper':
     return 1
 if __name__ == "__main__":
   assert playerWins(1,1) == 0
